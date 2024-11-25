@@ -1,10 +1,9 @@
 {
-  "name": "@wangeditor/editor-for-vue",
-  "version": "1.0.2",
-  "description": "wangEditor component for vue2.x",
+  "name": "cteditor/editor-for-vue",
+  "version": "1.0.0",
+  "description": "cteditor component for vue2.x",
   "author": "wangfupeng1988 <wangfupeng1988@163.com>",
   "contributors": [],
-  "homepage": "https://github.com/wangeditor-team/we-2021#readme",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
@@ -28,7 +27,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangeditor-team/we-2021.git"
+    "url": "git+https://github.com/ctq140109/wangEditor-for-vue"
   },
   "scripts": {
     "test": "jest",
@@ -41,11 +40,8 @@
     "dev-size-stats": "cross-env NODE_ENV=development:size_stats rollup -c rollup.config.js",
     "size-stats": "cross-env NODE_ENV=production:size_stats rollup -c rollup.config.js"
   },
-  "bugs": {
-    "url": "https://github.com/wangeditor-team/we-2021/issues"
-  },
   "peerDependencies": {
-    "@wangeditor/editor": ">=5.1.0",
+    "cteditor/packages/editor": ">=5.1.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -59,7 +55,7 @@
     "@rollup/plugin-replace": "^3.0.0",
     "@types/vue": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.21",
-    "@wangeditor/editor": "^5.1.1",
+    "cteditor/packages/editor": "^5.1.1",
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.10",

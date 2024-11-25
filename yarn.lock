@@ -1640,9 +1640,9 @@
     scroll-into-view-if-needed "^2.2.28"
     slate-history "^0.66.0"
 
-"@wangeditor/editor@^5.1.1":
+"cteditor/packages/editor@^5.1.1":
   version "5.1.1"
-  resolved "https://registry.npmmirror.com/@wangeditor/editor/-/editor-5.1.1.tgz#009b11277de86a4052087d0428934e7d2dd30147"
+  resolved "https://registry.npmmirror.com/cteditor/packages/editor/-/editor-5.1.1.tgz#009b11277de86a4052087d0428934e7d2dd30147"
   integrity sha512-BtccuHFm0QvYunIhIu7tllQWkwppkmEkD3OJ5Mn+F0REPQ/Z3HiEXbtlss2t9c/kHO4CtiFwv2XD/k/VEg7taA==
   dependencies:
     "@uppy/core" "^2.1.1"

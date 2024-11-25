@@ -38,6 +38,6 @@ export default {
 
     ...output,
   },
-  external: ['vue', '@wangeditor/editor'],
+  external: ['vue', 'cteditor/packages/editor'],
   plugins: finalPlugins,
 };

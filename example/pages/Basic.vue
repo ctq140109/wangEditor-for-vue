@@ -1,5 +1,5 @@
 <script lang="ts">
-import { IDomEditor } from '@wangeditor/editor';
+import { IDomEditor } from 'cteditor/packages/editor';
 import Vue from 'vue';
 import { Editor, Toolbar } from '../../src/index';
 
