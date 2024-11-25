@@ -1,5 +1,6 @@
 {
-  "name": "cteditor/editor-for-vue",
+  "name": "cteditor-for-vue",
+  "private": false,
   "version": "1.0.0",
   "description": "cteditor component for vue2.x",
   "author": "wangfupeng1988 <wangfupeng1988@163.com>",
@@ -41,7 +42,7 @@
     "size-stats": "cross-env NODE_ENV=production:size_stats rollup -c rollup.config.js"
   },
   "peerDependencies": {
-    "cteditor/packages/editor": ">=5.1.0",
+    "cteditor": ">=1.0.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -55,7 +56,7 @@
     "@rollup/plugin-replace": "^3.0.0",
     "@types/vue": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.21",
-    "cteditor/packages/editor": "^5.1.1",
+    "cteditor": "^1.0.0",
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.10",
@@ -80,5 +81,9 @@
     "typescript": "^4.4.4",
     "vue-template-compiler": "^2.6.14"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "volta": {
+    "node": "16.10.0",
+    "yarn": "1.22.19"
+  }
 }

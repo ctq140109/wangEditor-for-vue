@@ -57,7 +57,7 @@ export default Vue.extend({
         html: this.defaultHtml || this.value || '',
         config: {
           ...defaultConfig,
-          onCreated: (editor) => {
+          onCreated: (editor: any) => {
             this.editor = Object.seal(editor) as any; // 注意，一定要用 Object.seal() 否则会报错
 
             this.$emit('onCreated', editor);
@@ -66,7 +66,7 @@ export default Vue.extend({
               throw new Error(info);
             }
           },
-          onChange: (editor) => {
+          onChange: (editor: any) => {
             const editorHtml = editor.getHtml();
             this.curValue = editorHtml; // 记录当前 html 内容
             this.$emit('input', editorHtml); // 用于自定义 v-model
@@ -77,42 +77,42 @@ export default Vue.extend({
               throw new Error(info);
             }
           },
-          onDestroyed: (editor) => {
+          onDestroyed: (editor: any) => {
             this.$emit('onDestroyed', editor);
             if (defaultConfig.onDestroyed) {
               const info = genErrorInfo('onDestroyed');
               throw new Error(info);
             }
           },
-          onMaxLength: (editor) => {
+          onMaxLength: (editor: any) => {
             this.$emit('onMaxLength', editor);
             if (defaultConfig.onMaxLength) {
               const info = genErrorInfo('onMaxLength');
               throw new Error(info);
             }
           },
-          onFocus: (editor) => {
+          onFocus: (editor: any) => {
             this.$emit('onFocus', editor);
             if (defaultConfig.onFocus) {
               const info = genErrorInfo('onFocus');
               throw new Error(info);
             }
           },
-          onBlur: (editor) => {
+          onBlur: (editor: any) => {
             this.$emit('onBlur', editor);
             if (defaultConfig.onBlur) {
               const info = genErrorInfo('onBlur');
               throw new Error(info);
             }
           },
-          customAlert: (info, type) => {
+          customAlert: (info: any, type: any) => {
             this.$emit('customAlert', info, type);
             if (defaultConfig.customAlert) {
               const info = genErrorInfo('customAlert');
               throw new Error(info);
             }
           },
-          customPaste: (editor, event) => {
+          customPaste: (editor: any, event: any) => {
             if (defaultConfig.customPaste) {
               const info = genErrorInfo('customPaste');
               throw new Error(info);
